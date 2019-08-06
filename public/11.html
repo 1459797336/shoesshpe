@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 设置视口-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- 导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!-- 导入3个js 有顺序要求 -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/detail.css"/>
+
+    <style>
+     	
+		</style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+    <ul class="list-unstyled start">
+        <li>
+            <img src="smallimg/xing.png" data-img="smallimg/start1.png"/>
+        </li>
+        <li>
+            <img src="smallimg/xing.png" data-img="smallimg/start1.png"/>
+        </li>
+        <li>
+            <img src="smallimg/xing.png" data-img="smallimg/start1.png"/>
+        </li>
+        <li>
+            <img src="smallimg/xing.png" data-img="smallimg/start1.png"/>
+        </li>
+        <li>
+            <img src="smallimg/xing.png" data-img="smallimg/start1.png"/>
+        </li>
+    </ul>
+	<div>
+		——
+	</div>
+    <!--   //点击小图片，下方my-big中显示大图片
+      //1.查找触发事件的元素 $('img.my-small')
+      //2.绑定触发事件的元素.click(function(){   var $img=$(this)
+   //3.查找要修改的元素的       $('img.my-big')
+       //4.修改元素.prop('src',$img.attr('data-target'))  })
+      $('[class="my-small"]')
+      //触发事件元素中添加自定义属性事先加载出来要  .click(function(){
+        //查找要修改的元素 $('img.my-big').attr('src','data-target')-->
+    <script>
+        $('.start li')
+                .click(function(){
+                    var $img=$(this)
+                    $img.prop('src',$img.attr('data-img')).parent()
+                            .prevAll().child().prop('src',$img.attr('data-img'))
+                })
+    </script>
+    <!-- 胶囊导航-->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#tab1" class="nav-link" data-toggle="pill">口红</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tab2" class="nav-link" data-toggle="pill">AJ</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tab3" class="nav-link" data-toggle="pill">服饰</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tab4" class="nav-link" data-toggle="pill">汽车</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane">
+            YSL,Dior,chanel,故宫,
+        </div>
+        <div id="tab2" class="tab-pane">
+            AJ1,AJ12,AJ11,AJ13,
+        </div>
+        <div  id="tab3" class="tab-pane">
+            小象  爱马仕  GUCCI  mk
+        </div>
+        <div id="tab4"  class="tab-pane">
+            野马眼镜蛇  F650  五菱宏光 大G GRT
+        </div>
+    </div>
+    <ul class="border">
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

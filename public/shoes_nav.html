@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>SHOES SHOPPING</title>
+     <!-- 设置视口-->
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <!-- 导入css-->
+     <link rel="stylesheet" href="css/bootstrap.css"/>
+     <!-- 导入3个js 有顺序要求 -->
+     <script src="../js/jquery.min.js"></script>
+     <script src="../js/popper.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+	 <link rel="stylesheet" href="css/comm.css"/>
+	 <link rel="stylesheet" href="css/nav.css">
+	 <style>
+		 .carousel-control-prev,.carousel-control-next{width: 4%;height:20%;
+			 background:#aaa;
+			 border-radius: 0.25rem;
+			 top:40%
+		 }
+		 .carousel-indicators li{
+			 width:0.7rem;
+			 height:0.70rem;
+			 background-color:#fff;
+			 border-radius: 50%;
+			 margin: 0 5px;
+		 }
+	 </style>
+ </head>
+ <body>
+	 <header></header>
+ 
+ <!-- 插入轮播图 -->
+ 	<div id='lunbotu' data-ride="carousel">
+		<div class="carousel" id="demo">
+			<!-- 1.所有轮播图片-->
+			<div class="carousel-inner">
+				<div class="carousel-item active"><img class="w-100" src="../img/lunbotu1.jpg" alt=""/></div>
+				<div class="carousel-item"><img class="w-100" src="../img/lunbotu2.jpg" alt=""/></div>
+			</div>
+			<!-- 2.左右箭头-->
+			<a href="#demo" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#demo" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+			<!-- 3.轮播指示器-->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+			</ul>
+		</div>
+	</div>
+
+ <!--1.商品列表      -->
+    <!--1.1 商品标题 -->
+	<div class='product pb-5' >
+		<div class='product_content'>
+			<div>FEATURES</div>
+			<h3 class='product_titile'>-特色产品</h3>
+    	</div>
+     <!-- 1.2产品右导航-->
+		<ul class="nav nav-justified w-60">
+				<li class="nav-item  p-0">
+					<a class="nav-link  my_font" href="#">全部</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  my_font" href="#">耐克</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  my_font" href="#">阿迪达斯</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  my_font" href="#">男士</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  my_font" href="#">女士</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link  my_font" href="#">孩子们</a>
+				</li>
+		</ul>
+     <!--1.3产品内容-->
+		 <div class='row m-0 wh'>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+ 						<div class='content_productimg'>
+ 							<a class='img_a1 btn btn-danger' href="#" >NEW</a><br><br>
+							<a class='img_a2 btn btn-success' href="#">-35%</a>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+
+					</div>
+				</div>
+				<div class='col-3 p-0'>
+				  <div class='content_htop'>
+					  <div class='content_productimg'>
+					  </div>
+					  <div>
+						  <div class='pt-2 pl-2'>
+							  <a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+						  </div>
+						  <p class='m-0 pl-2'>
+							  <a href="#" class='my_product_font1'>男鞋</a>
+							  <a href="#" class='my_product_font1'>耐克</a>
+							  <a href="#" class='my_product_font1'>乔丹</a>
+						  </p>
+						  <span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+					  </div>
+				  </div>
+				</div>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+						<div class='content_productimg'>
+							<a class='img_a2 btn btn-success' href="#">-35%</a>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class='col-3 p-0'>
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+
+		 </div>
+	</div>
+ <!-- 1商品列表下 插入两张图片-->
+	<div class="d-flex product_bigimage justify-content-center">
+		<div>
+			<a href="#" class="product_bigimg"><img src="../img/banner/home-banner-1.png" alt=""/></a>
+		</div>
+		<div>
+			<a href="#" class="product_bigimg"><img src="../img/banner/home-banner-2.png" alt=""/></a>
+		</div>
+	</div>
+    <hr/>
+
+
+ 	<!-- 1.2商品热销列表-->
+ 	<div class="product">
+		<div class='product_content'>
+			<div>BEST SELE</div>
+			<h3 class='product_titile'>-热销产品</h3>
+		</div>
+		<!-- 列表图最右边小箭头-->
+		<div class='left_right my_font'>
+			<a href="#">
+				<span>←&nbsp;</span>上一个&nbsp;&nbsp;
+			</a>
+			<a href="#">
+				&nbsp;&nbsp;下一个<span>&nbsp;→</span>
+			</a>
+		</div>
+		<!-- 列表产品-->
+		<div class="carousel">
+			<div class="carousel-inner d-flex">
+				<div class="carousel-item mx-2">
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item mx-2">
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item mx-2">
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item mx-2">
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item mx-2">
+					<div class='content_htop'>
+						<div class='content_productimg'>
+						</div>
+						<div>
+							<div class='pt-2 pl-2'>
+								<a href="#" class='my_product_font font-weight-bolder'>AIR&nbsp;JORDAN&nbsp;7&nbsp;复古</a>
+							</div>
+							<p class='m-0 pl-2'>
+								<a href="#" class='my_product_font1'>男鞋</a>
+								<a href="#" class='my_product_font1'>耐克</a>
+								<a href="#" class='my_product_font1'>乔丹</a>
+							</p>
+							<span class='float-left'><del class='my_product_font1'>£ 330</del><a href="#" class='my_product_font'>120英镑</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ 	<!-- 发起人列表 未写-->
+ 	<div class="order_parsen ">
+		<div>
+			<div class="my_font bg-white">
+				<a href="#"><img src="" alt=""/></a>
+				<div>Logan May  - 首席执行官兼创始人Invision</div>
+				<div>“甜点布丁甜点果冻豆蛋糕甜焦糖姜饼。水果蛋糕饼干芝士蛋糕。曲奇饼顶部甜松饼布丁馅饼熊爪糖李子新月形面包。</div>
+			</div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+    <!-- news  我们的故事-->
+ 	<div class="product">
+	 	<div class='product_content'>
+		 <div>NEWS</div>
+		 <h3 class='product_titile'>-我们的故事</h3>
+	 	</div>
+		<!--最右边的小箭头-->
+		<div class='left_right'>
+			<a href="#" class="my_font font-weight-bold">
+				&nbsp;&nbsp;查看所有帖子<span>&nbsp;→</span>
+			</a>
+		</div>
+	</div>
+ 	<!--三个故事布局-->
+ 	<div class="row story py-4">
+	 	<div class="col-4 p-0">
+			<div class="px-4 font-weight-light">
+				<a href="#"><img src="../img/blog/1.jpg" class="w-100" alt=""/></a>
+				<h5 class="my-2"><a href="#">Breaking2套件的内幕</a></h5>
+				<p>上传者：Alena Studio - 2017年6月10日</p>
+				<p>利用敏捷框架为高级概述提供强大的概要。企业战略的迭代方法促进协作思维进一步......</p>
+				<a href="#">阅读更多&nbsp;&nbsp;→</a>
+			</div>
+	 	</div>
+	 	<div class="col-4 p-0">
+			<div class="px-4 font-weight-light">
+				<a href="#"><img src="../img/blog/2.jpg" class="w-100" alt=""/></a>
+				<h5 class="my-2"><a href="#">打开Breaking2竞赛策略</a></h5>
+				<p>上传者：Alena Studio - 2017年6月10日</p>
+				<p>利用敏捷框架为高级概述提供强大的概要。企业战略的迭代方法促进协作思维进一步......</p>
+				<a href="#">阅读更多&nbsp;&nbsp;→</a>
+			</div>
+		</div>
+		<div class="col-4 p-0">
+			<div class="px-4 font-weight-light">
+				<a href="#"><img src="../img/blog/3.jpg" class="w-100"  alt=""/></a>
+				<h5 class="my-2"><a href="#">耐克最新的足球防守打破了模具</a></h5>
+				<p>上传者：Alena Studio - 2017年6月10日</p>
+				<p>利用敏捷框架为高级概述提供强大的概要。企业战略的迭代方法促进协作思维进一步......</p>
+				<a href="#">阅读更多&nbsp;&nbsp;→</a>
+			</div>
+		</div>
+
+	 </div>
+<!--页脚 -->
+ 	 <footer></footer>
+ 	 <script src="js/jquery-1.11.3.js"></script>
+	 <script src="js/header.js"></script>
+	 <script src="js/footer.js"></script>
+ </body>
+</html>

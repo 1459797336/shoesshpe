@@ -1,0 +1,195 @@
+	/*	轮播图*/
+	 #lunbotu {
+			width:1440px!important; height:490px;
+		 	margin: 0 auto;
+	 }
+/*	特色产品内容*/ 
+	div.product_content{
+		width:1008px;  height:140px;
+   	}
+	div.product_content>div{
+		  position:absolute;
+ 		   display:block;
+		   font-size:100px;
+		   color:#f4f4f4;
+ 		   font-weight:400;
+		}
+    div.product_content>.product_titile{
+			position:relative;
+			float:left;
+			top:45%;
+ 	}
+      /*产品导航*/
+	  .product{
+	   width:1440px;
+	   padding:0 15px;
+	   margin:0 auto;
+	  }
+
+	ul.nav-justified{
+	   margin-left:50%;
+	   font-weight:bolder;
+	   color:#808080;
+	}
+    /*产品内容*/
+	div.product>div.row{
+		 height:800px;
+     	}
+     /*	设置的宽度没有完全重合与每个小内容的宽 */
+	.content_htop{height:400px;
+ 	}  /*4  8 小内容有有外边距 */
+	.content_htop div.content_productimg{
+		height:330px;
+		width:330px;
+		margin-left: 0;
+ 	} 
+	div.row>div:nth-child(1)>.content_htop>div.content_productimg{
+	    background-image:url(../../img/shoe/1.jpg);
+  	}
+ 	.content_htop>div>a.img_a1{
+ 		position:relative;
+		float:left;
+ 	}
+
+/*设置字体的大小产品内容里*/
+    .my_product_font{
+		font-size: 1.0rem;
+          color:#5b5b5b;
+	}
+	.my_product_font1{
+		font-size: 0.8rem;
+        color:#8d8d8d;
+	}
+	span.float-left{
+		position:relative;
+		margin-top:-36px;
+		margin-left:225px;
+	}
+  	/*插入图片2 图片3  图片4  产品 */
+	div.row>div:nth-child(2)>.content_htop>div.content_productimg{
+			background-image:url(../../img/shoe/2.jpg);
+			background-size:100% 100%;
+	}
+	div.row>div:nth-child(3)>.content_htop>div.content_productimg{
+			background-image:url(../../img/shoe/3.jpg);
+			background-size:100% 100%;
+	}
+	div.row>div:nth-child(4)>.content_htop>div.content_productimg{
+			background-image:url(../../img/shoe/4.jpg);
+			background-size:100% 100%;
+	}
+	div.row>div:nth-child(5)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/5.jpg);
+		background-size:100% 100%;
+	}
+	div.row>div:nth-child(6)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/6.jpg);
+		background-size:100% 100%;
+	}
+	div.row>div:nth-child(7)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/7.jpg);
+		background-size:100% 100%;
+	}
+	div.row>div:nth-child(8)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/8.jpg);
+		background-size:100% 100%;
+	}
+	/*每个产品hover 设置黑色边框 缩放效果 */
+	/* .wh 非轮播产品*/
+	.wh .content_htop:before{
+		content: '';
+		position: absolute;
+		width: calc(100% + 10px);
+		height: calc(100% + 10px);
+		transform: scale(0.8, 0.8);
+		border: 1px solid rgba(0,0,0,0);
+		top: -15px;
+		left: -35px;
+	}
+	.wh .content_htop:hover{
+		content: '';
+		position: absolute;
+		border: 1px solid #000000;
+ 		height: calc(100% + 10px);
+ 		top: -15px;
+ 		cursor: pointer;
+		transform: scaleY(1);
+ 		transition: all 0.3s ease;
+ 	}
+	/*产品背景图片大小设置以及插入*/
+	.product_bigimage{
+		width: 1440px;
+		margin: 0 auto;
+	}
+	.product_bigimage>div>a>img{
+		width: 720px;
+ 	}
+	.product_bigimage div{
+		position: relative;
+		display: block;
+ 		overflow: hidden;
+	}
+
+	.product_bigimage div a.product_bigimg::before{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		background-color: rgba(255, 255, 255, 0.5);
+		transition: all 0.6s ease;
+	}
+
+	.product_bigimage div a.product_bigimg:hover:before{
+		transform: scale3d(1.9, 1.4, 0.9) rotate3d(0, 0, 1, 45deg) translate3d(0, -120%, 0);
+	}
+
+	/*产品2层  标题 后左右箭头设置*/
+	.left_right>a{
+		font-size: 1.0rem;
+		color:#808080;
+		margin-top:200px;
+	}
+	.left_right>a:hover{
+		text-decoration:none;
+ 	}
+	.left_right{
+		float:right;
+		margin-right:117px;
+		margin-top:-85px;
+	}
+	/*插入图片*/
+	div.carousel-inner>div:nth-child(1)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/1.jpg);
+	}
+	div.carousel-inner>div:nth-child(2)>.content_htop>div.content_productimg {
+		background-image: url(../../img/shoe/2.jpg);
+		background-size: 100% 100%;
+	}
+	div.carousel-inner>div:nth-child(3)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/3.jpg);
+		background-size: 100% 100%;
+
+	}
+	div.carousel-inner>div:nth-child(4)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/4.jpg);
+		background-size: 100% 100%;
+	}
+	div.carousel-inner>div:nth-child(5)>.content_htop>div.content_productimg{
+		background-image:url(../../img/shoe/5.jpg);
+		background-size: 100% 100%;
+	}
+
+	/*畅销轮播图*/
+
+	.d-flex>.carousel-item{
+		display: inline-block;
+	}
+
+   /*三个故事设置固定宽高*/
+	.story{
+		width: 1440px;
+		margin: 0 auto;
+	}

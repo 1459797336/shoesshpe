@@ -1,0 +1,24 @@
+*{margin:0;padding:0;}
+.my_font{font-size: 0.9rem;
+          color:#808080;}
+
+ul{
+	list-style:none;
+}
+a{
+    text-decoration: none;
+    color:#626262;
+}
+a:hover{
+    text-decoration: none;
+    color:#2AC37D;
+}
+.some_font{
+    color:#5b5b5b;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.my_width{
+    width: 1440px;
+}
